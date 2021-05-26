@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import GithubContext from "../../context/github/githubContext";
 
 const Search = (props) => {
-  const { clearUsers, showClear, setAlertMessage } = props;
+  const { setAlertMessage } = props;
 
   const githubContext = useContext(GithubContext);
 
@@ -38,8 +38,11 @@ const Search = (props) => {
           className="btn btn-dark btn-block"
         />
       </form>
-      {showClear && (
-        <button className="btn btn-light btn-block" onClick={clearUsers}>
+      {githubContext.users.length > 0 && (
+        <button
+          className="btn btn-light btn-block"
+          onClick={githubContext.clearUsers}
+        >
           Clear
         </button>
       )}
