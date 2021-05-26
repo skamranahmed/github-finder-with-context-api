@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Search = (props) => {
-  const { searchUsers, clearUsers, showClear, setAlert } = props;
+  const { searchUsers, clearUsers, showClear, setAlertMessage } = props;
 
   const [text, setText] = useState("");
 
@@ -12,7 +12,7 @@ const Search = (props) => {
   const onSubmit = (e) => {
     e.preventDefault();
     if (text.trim() === "") {
-      setAlert("Please enter something", "light");
+      setAlertMessage("Please enter something", "light");
     } else {
       searchUsers(text);
       setText("");
@@ -36,10 +36,7 @@ const Search = (props) => {
         />
       </form>
       {showClear && (
-        <button
-          className="btn btn-light btn-block"
-          onClick={clearUsers}
-        >
+        <button className="btn btn-light btn-block" onClick={clearUsers}>
           Clear
         </button>
       )}
