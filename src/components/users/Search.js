@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import GithubContext from "../../context/github/githubContext";
 
 const Search = (props) => {
-  const { searchUsers, clearUsers, showClear, setAlertMessage } = props;
+  const { clearUsers, showClear, setAlertMessage } = props;
+
+  const githubContext = useContext(GithubContext);
 
   const [text, setText] = useState("");
 
@@ -14,7 +17,7 @@ const Search = (props) => {
     if (text.trim() === "") {
       setAlertMessage("Please enter something", "light");
     } else {
-      searchUsers(text);
+      githubContext.searchUsers(text);
       setText("");
     }
   };
