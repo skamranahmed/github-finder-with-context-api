@@ -14,6 +14,8 @@ To run this project, you will need to add the following environment variables to
 
 `REACT_APP_GITHUB_CLIENT_SECRET`
 
+Visit [Github OAuth Apps Section](https://github.com/settings/applications/new) to get your GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET
+
 ## Run Locally
 
 Clone the project
