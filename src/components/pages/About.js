@@ -7,7 +7,11 @@ const About = () => {
       <p>App to search Github Users</p>
       <p>
         Created by{" "}
-        <a href="https://github.com/skamranahmed" target="_blank">
+        <a
+          href="https://github.com/skamranahmed"
+          target="_blank"
+          rel="noreferrer"
+        >
           Syed Kamran Ahmed
         </a>
       </p>
