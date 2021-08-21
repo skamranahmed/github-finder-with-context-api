@@ -4,7 +4,7 @@
 
 ## Live Demo
 
-Open [Github Finder](http://localhost:3000)
+Open [Github Finder](https://github-finder-ska.netlify.app/)
 
 ## Environment Variables
 
