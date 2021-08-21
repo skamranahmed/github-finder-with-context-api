@@ -5,7 +5,12 @@ const About = () => {
     <Fragment>
       <h1>About this App</h1>
       <p>App to search Github Users</p>
-      <p>Version: 1.0.0</p>
+      <p>
+        Created by{" "}
+        <a href="https://github.com/skamranahmed" target="_blank">
+          Syed Kamran Ahmed
+        </a>
+      </p>
     </Fragment>
   );
 };
